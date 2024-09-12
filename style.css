@@ -1,5 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #D4E7C2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+
 }
 
 .titulo {
@@ -36,4 +46,12 @@ body {
 .lista {
     text-align: center;
     list-style-position: inside;
+}
+
+.contenido {
+    flex: 1; /* Ocupa todo el espacio disponible, empujando el footer hacia abajo */
+}
+
+footer {
+    padding: 0 0 .5% .5%;
 }

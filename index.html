@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="titulo">Busca una CURP</h1>
-    <p class="parrafo1">Carga un archivo .CSV</p>
-    <div class="contenedor1">
-        <input type="file" id="fileInput" accept=".csv">
+    <div class="contenido">
+        <h1 class="titulo">Busca una CURP</h1>
+        <p class="parrafo1">Carga un archivo .CSV</p>
+        <div class="contenedor1">
+            <input type="file" id="fileInput" accept=".csv">
+        </div>
+        <p class="parrafo">¿Qué CURP quisieras buscar?</p>
+        <div class="contenedor">
+            <input type="text" id="curp">
+            <button id="boton_buscar">Buscar</button>
+        </div>
+        <main class="lista"></main>
     </div>
-    <p class="parrafo">¿Qué CURP quisieras buscar?</p>
-    <div class="contenedor">
-        <input type="text" id="curp">
-        <button id="boton_buscar">Buscar</button>
-    </div>
-    <main class="lista"></main>
     <script src="./script.js"></script>
     <footer>Copyright © 2024 Diego Barreras</footer>
 </body>
